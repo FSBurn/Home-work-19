@@ -5,11 +5,11 @@ const mytRandom = function getRandomArbitrary(min, max) {
 }
 
 setInterval(()=>{
-    block.style.left = `${Math.round(mytRandom(0,window.innerWidth-100))}px`;
+    block.style.left = `${Math.round(mytRandom(0,window.innerWidth-block.offsetWidth-10))}px`;
 },1000)
 
 setInterval(()=>{
-    block.style.top = `${Math.round(mytRandom(0,window.innerHeight-100))}px`;
+    block.style.top = `${Math.round(mytRandom(0,window.innerHeight-block.offsetHeight-10))}px`;
 },1000)
 
 setInterval(()=>{
